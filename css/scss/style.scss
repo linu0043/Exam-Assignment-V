@@ -1,0 +1,117 @@
+@import "queries";
+header{
+    .headerContent{
+        height: 100%;
+        h1, h2{
+            margin: 0;
+        }
+        h1{
+            font-weight: 200;
+        }
+    }
+}
+.jumbotron{
+    height: 200px;
+    background-image: url("../img/jumbotron.jpg");
+    background-size: 130% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+    .jumbotronContent{
+        width: 100%;
+        color: white;
+    }
+}
+
+main{
+
+    .productContainer{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+
+        .product{
+            border-radius: 3px;
+            padding-bottom: 20px;
+            border: 1px solid #dfdfdf;
+            width: 48%;
+            margin-bottom: 20px;
+            img{
+                border-radius: 3px 3px 0 0;
+                width: 100%;
+            }
+            .productInfo{
+                padding: 0 10px;
+
+                button{
+                    color: gray;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    border: 1px solid gray;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.15s;
+
+                    &:hover{
+                        background-color: #a8a8a8;
+                        border-color: #fff;
+                        color: #fff;
+                        transition: 0.15s;
+                    }
+                }
+            }
+        }
+    }
+    .priceContainer, .addProductStyle{
+        .badge{
+            background-color: gray;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .priceTable{
+            list-style-type: none;
+
+            div{
+                font-weight: bold;
+                
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+        .orderButton, .clearCart{
+            width: 100%;
+            background-color: #3bbcad;
+            transition: 0.15s;
+            height: 45px;
+            font-size: 18px;
+            outline: none;
+            border: 1px solid #dfdfdf;
+            color: #fff;
+            border-radius: 5px;
+            margin-bottom: 5px;
+
+            &:hover{
+                background-color: darken(#3bbcad, 10%);
+                cursor: pointer;
+                transition: 0.15s;
+            }
+        }
+        .orderButton{
+            display: none;
+        }
+        .clearCart{
+            background-color: #ff5a5a;
+
+            &:hover{
+                background-color: darken(#ff5a5a, 10%);
+            }
+        }
+    }
+    .rip{
+        text-align: center;
+    }
+}
