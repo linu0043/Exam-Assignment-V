@@ -1,4 +1,4 @@
-.docx
-.json
-/.vscode
-/css/scss
+*.docx
+*.json
+.vscode/
+css/scss/*
